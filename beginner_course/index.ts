@@ -25,7 +25,7 @@ function placeOrder(pizzaName) {
     return newOrder
 }
 
-function completeOrder(orderId) {
+function completeOrder(orderId: number) {
     const order = orderQueue.find(order => order.id === orderId)
     order.status = "completed"
     return order
@@ -36,7 +36,7 @@ addNewPizza({ name: "BBQ Chicken", cost: 11 })
 addNewPizza({ name: "Spicy Beef", cost: 12 })
 
 placeOrder("Garlic Chicken")
-completeOrder("1")
+completeOrder(1)
 
 console.log("Menu:", menu)
 console.log("Cash in register:", cashInRegister)
