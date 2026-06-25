@@ -46,3 +46,6 @@ function displayInfo(person: Person) {
 }
 
 displayInfo(person1)
+
+let people: Person[] = [person1, person2]
+let people2: Array<Person> = [person1, person2]
